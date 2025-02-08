@@ -1,0 +1,224 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif; /* Traditional serif font for a paper-like feel */
+    line-height: 1.6;
+    color: #e0e0e0;
+    background-color: #121212; /* Dark background for the entire page */
+    background-image: url('https://www.transparenttextures.com/patterns/diagonal-stripes-light.png'); /* Paper texture */
+    transition: background 0.3s ease-in-out;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #6a4c9c, #5f3b6d);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header:hover {
+    background: linear-gradient(90deg, #5a3d81, #50326c);
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1.name {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header .title {
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #e1b7e8;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu a {
+    font-family: 'Lora', serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: #121212;
+}
+
+/* Sections */
+section {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #444;
+    background-color: #000000; /* Black background for all sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 1.5rem;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.2rem;
+    color: #ffdee3; /* Light color for headings to stand out against black */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    animation: fadeInUp 1s ease;
+}
+
+p {
+    font-family: 'Lora', serif;
+    color: #e0e0e0; /* Light text color for paragraphs */
+    margin-bottom: 1rem;
+    text-align: center;
+    animation: fadeInUp 1.2s ease;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1rem;
+    color: #e0e0e0; /* Light text color for list items */
+}
+
+/* Skills Section */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    animation: fadeInUp 1.5s ease;
+}
+
+.skills-list li {
+    font-family: 'Lora', serif;
+    background: linear-gradient(45deg, #42a5f5, #ab47bc);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list li:hover {
+    transform: scale(1.1) rotate(5deg);
+    background: linear-gradient(45deg, #2196f3, #8e24aa);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #2d3047;
+    color: #e1b7e8;
+    margin-top: 1.5rem;
+}
+
+footer a {
+    font-family: 'Lora', serif;
+    color: #ffe4b5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Interactive Elements */
+.skill-progress-bar {
+    width: 100%;
+    background-color: #333333;
+    border-radius: 5px;
+    margin-top: 1rem;
+    height: 20px;
+    overflow: hidden;
+}
+
+.skill-progress-bar div {
+    height: 100%;
+    background-color: #42a5f5;
+    transition: width 1s ease;
+}
+
+/* Animated Button */
+button {
+    font-family: 'Lora', serif;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #6a4c9c, #5f3b6d);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #5a3d81, #50326c);
+}
